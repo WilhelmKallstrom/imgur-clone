@@ -1,0 +1,41 @@
+body{
+  color: #FFFFFF !important;
+}
+
+.mt-100{
+  margin-top: 100px !important;
+}
+
+.bg-dark{
+  background-color: #151718 !important;
+}
+
+.bg-dark2{
+  background-color: #161819 !important;
+}
+
+.bg-green{
+  background-color: rgb(39, 174, 99) !important;
+}
+
+.loading{
+  animation-name: loading;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.vh-80{
+  height: 80vh;
+}
+
+@keyframes loading {
+  0%{
+    background-color: #161819;
+  }
+  50%{
+    background-color: #0a0b0b;
+  }
+  100%{
+    background-color: #161819;
+  }
+}
