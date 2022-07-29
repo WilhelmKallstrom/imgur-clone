@@ -18,10 +18,6 @@ function Image() {
         })
     });
 
-    const CopyLink = () => {
-        navigator.clipboard.writeText(window.location.href);
-        alert("Link copied!");
-    }
 
     if (getImage === null) {
         return (
@@ -33,9 +29,7 @@ function Image() {
         <div className="container mt-100">
             <img src={getImage} className="w-100 rounded-3 shadow-lg mb-3" />
 
-            <div className="d-flex justify-content-center">
-                <button className="btn btn-success bg-green mb-5 fw-bold" onClick={CopyLink}>Copy Link</button>
-            </div>
+
         </div>
     );
 }
