@@ -1,8 +1,11 @@
+import {Link} from "react-router-dom"
+
 function Navbar() {
     return (
-        <nav className="navbar bg-light mb-5">
+        <nav className="navbar bg-dark2 fixed-top">
             <div className="container">
-                <span className="navbar-brand mb-0 h1">Navbar</span>
+                <Link to="/" className="navbar-brand mb-0 fw-bold text-white">Imgar</Link>
+                <Link to="/upload" className="btn btn-success fw-bold bg-green">New Post</Link>
             </div>
         </nav>
     );
