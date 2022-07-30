@@ -18,10 +18,17 @@ function Image() {
         })
     });
 
+    const CopyToClipboard = () => {
+        navigator.clipboard.writeText(window.location.href).then(()=> {
+            alert("Link Copied!")
+        });
+    }
 
     if (getImage === null) {
         return (
-            <div className="container mt-100 loading vh-80 rounded-3 shadow-lg"></div>
+            <div className="container">
+                <div className="mt-100 loading vh-80 rounded-3 shadow-lg"></div>
+            </div>
         );
     }
 
@@ -29,6 +36,9 @@ function Image() {
         <div className="container mt-100">
             <img src={getImage} className="w-100 rounded-3 shadow-lg mb-3" />
 
+                <div className="d-flex justify-content-center">
+                    <button className="btn btn-success bg-green fw-bold" onClick={CopyToClipboard}>Copy Link</button>
+                </div>
 
         </div>
     );
